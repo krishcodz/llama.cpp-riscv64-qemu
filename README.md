@@ -17,5 +17,5 @@ make -j$(nproc)
 ```
 
 ```bash
-qemu-riscv64 -L /opt/riscv/sysroot/ -cpu rv64,v=true,vlen=256,elen=64,vext_spec=v1.0 ./bin/llama-cli -m ../../models/llama-2-7b-chat.Q3_K_M.gguf -p "Hi" -n 100
+qemu-riscv64 -L /path/to/sysroot/ -cpu rv64,v=true,vlen=256,elen=64,vext_spec=v1.0 ./bin/llama-cli -m /path/to/model.gguf -p "Hi" -n 100
 ```
